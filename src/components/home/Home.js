@@ -3,6 +3,7 @@ import NavBar from "../navbar/navBar";
 import Main from "../main/Main";
 import { connect } from "react-redux";
 import { logUser } from "../../actions/index";
+import Board from '../../containers/Boards'
 import {
   BrowserRouter as Router,
   Route,
@@ -19,6 +20,7 @@ function Home(props) {
     <>
       <NavBar />
       <Main />
+      <Route path="/boardname" component={Board}/>
     </>
   )
 }

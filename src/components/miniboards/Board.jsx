@@ -24,7 +24,7 @@ class Board extends Component {
     }else{
       //got to the board :
       console.log('hello larbi')
-      
+       
 
 
 

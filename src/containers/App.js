@@ -1,6 +1,7 @@
 import React from "react";
 import Login from "../components/login/login";
-import Home from '../components/home/Home'
+import Home from '../components/home/Home';
+import Board from './Boards';
 import "./App.css";
 import {connect}  from 'react-redux';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
@@ -11,6 +12,7 @@ function App(props) {
     <Router>
         <Route exact path="/" component={Login} />
         <Route path="/home" component={Home} />
+       
   </Router>
   )
 
