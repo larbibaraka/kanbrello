@@ -1,18 +1,33 @@
 import React from "react";
 import NavBar from "../navbar/navBar";
 import Main from "../main/Main";
+import { connect } from "react-redux";
+import { logUser } from "../../actions/index";
+import {
+  BrowserRouter as Router,
+  Route,
+  Link,
+  Redirect,
+  withRouter
+} from "react-router-dom";
+function Home(props) {
 
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+  const userLogged = props.userLogged;
 
-function Home() {
+  if (!userLogged) return <Redirect to='/'/>
   return (
-    
-    <Router>
+    <>
       <NavBar />
       <Main />
-    </Router>
-  
-     
-  );
+    </>
+  )
 }
-export default Home;
+
+const mapStateToProps = state => ({
+  userLogged: state.userReducer.userLogged
+});
+export default connect(
+  mapStateToProps,
+  { logUser }
+)(Home);
+

@@ -3,7 +3,7 @@ import {LOG_USER} from '../constants/';
 
 
 const InitialState = {
-    userLogged : false,
+    userLogged : true,
     token : "sometokefrombackend"
 }
 

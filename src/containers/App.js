@@ -6,8 +6,15 @@ import {connect}  from 'react-redux';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 function App(props) {
-  const userLogged = props.userLogged;
-  return (!userLogged) ? <Login/> : <Home/>
+  // const userLogged = props.userLogged;
+  return(
+    <Router>
+        <Route exact path="/" component={Login} />
+        <Route path="/home" component={Home} />
+  </Router>
+  )
+
+  // return (!userLogged) ? <Login/> : <Home/>
 }
 
 const mapStateToProps = state => ({
