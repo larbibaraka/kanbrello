@@ -12,8 +12,7 @@ function App(props) {
     <Router>
         <Route exact path="/" component={Login} />
         <Route path="/home" component={Home} />
-       
-  </Router>
+    </Router>
   )
 
   // return (!userLogged) ? <Login/> : <Home/>

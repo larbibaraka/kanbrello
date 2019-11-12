@@ -74,7 +74,7 @@ class Main extends Component {
             </div>
           </div>
           <div className="uk-margin">
-            <a href="dd" className="uk-button uk-button-danger">
+            <a href="#" className="uk-button uk-button-danger">
               Show More Boards
             </a>
           </div>
