@@ -7,6 +7,7 @@
     "@types/node": "12.12.7",
     "@types/react-dom": "16.9.4",
     "bootstrap": "^4.4.1",
+    "node-sass": "^4.13.0",
     "react": "^16.11.0",
     "react-bootstrap": "^1.0.0-beta.16",
     "react-dom": "^16.11.0",

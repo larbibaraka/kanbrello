@@ -1,0 +1,19 @@
+@import './partials/login.scss';
+
+body {
+    background: #f9fafc;
+}
+
+#root {
+    height: 100%;
+}
+.form-control{
+
+    height: 50px;;
+    &:focus {
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+}
+
+
