@@ -1,0 +1,23 @@
+ .loginBox{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .loginBox-card{
+        width: 35rem;
+        justify-content: center;
+        padding: 2%;
+        border: 0;
+        border-radius: 6px;
+        -webkit-box-shadow: -2px 3px 20px 6px rgba(224,215,224,1);
+        -moz-box-shadow: -2px 3px 20px 6px rgba(224,215,224,1);
+        box-shadow: -2px 3px 20px 6px rgb(226, 226, 226);
+    }
+
+    .google-button{
+        box-shadow: rgba(58, 58, 58, 0.2) 1px 1px 5px 0;
+        border-color: transparent;
+    }
+
+ }
