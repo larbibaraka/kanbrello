@@ -14,7 +14,7 @@ import NavbarAcordion from "./navbarElements/NavbarAcordion";
 
 const DashboardNavBar: React.FC = () => {
   return (
-    <Navbar collapseOnSelect expand="lg">
+    <Navbar collapseOnSelect expand="lg" className="bg-info">
       <Navbar.Brand href="/dashboard">
         <span className="home-navbar"><FontAwesomeIcon icon={faHome} /></span>
       </Navbar.Brand>
